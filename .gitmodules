@@ -1,0 +1,4 @@
+[submodule "ElegyEngine"]
+	path = ElegyEngine
+	url = https://github.com/ElegyEngine/ElegyEngine.git
+	branch = master
