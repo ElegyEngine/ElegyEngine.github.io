@@ -7,7 +7,7 @@ const config: Config = {
   tagline: 'A love letter to the 90s, gamedev and modding~',
   favicon: 'img/FoxEarLogo_NoText_128.png',
 
-  url: 'https://elegy.microfox.dev',
+  url: 'https://elegyengine.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
