@@ -10,7 +10,11 @@ Full name: Elegy.RenderSystem.Objects
 * [Light](Light.md)
 * [Mesh](Mesh.md)
 * [MeshEntity](MeshEntity.md)
+* [MeshEntityChunk](MeshEntityChunk.md)
+  * Represents a chunk of renderable entity data. One chunk contains up to 256 re...
+* [MeshEntitySystem](MeshEntitySystem.md)
 * [View](View.md)
+  * A renderable view. 
 * [Volume](Volume.md)
 
 ## Enums

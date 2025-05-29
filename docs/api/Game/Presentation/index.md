@@ -8,6 +8,7 @@ Full name: Game.Presentation
 * [GamePresentation](GamePresentation.md)
 * [Hud](Hud.md)
 * [Renderer](Renderer.md)
+* [SurfaceCache](SurfaceCache.md)
 
 ## Enums
 

@@ -5,6 +5,8 @@ Full name: Elegy.Common.Utilities
 
 ## Classes, structs and/or records
 
+* [BitVector](BitVector.md)
+* [BitVectorDebugProxy](BitVectorDebugProxy.md)
 * [ByteBuffer](ByteBuffer.md)
 * [ByteBufferDynamic](ByteBufferDynamic.md)
   * A byte buffer, implemented with an array that shrinks and grows as needed. 

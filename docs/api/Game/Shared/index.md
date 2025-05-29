@@ -7,7 +7,6 @@ Full name: Game.Shared
 
 * [AssetRegistry](AssetRegistry.md)
   * Manages resource strings. The server typically populates this list, and clien...
-* [BasicController](BasicController.md)
 * [ClientCommands](ClientCommands.md)
 * [Entity](Entity.md)
 * [EntityBuilder](EntityBuilder.md)
@@ -16,10 +15,13 @@ Full name: Game.Shared
 * [EntityUtilities](EntityUtilities.md)
   * Manages everything pertaining to entity components and such. 
 * [EntityWorld](EntityWorld.md)
+* [FlyCamController](FlyCamController.md)
 * [IPlayerControllable](IPlayerControllable.md)
   * An entity that is controllable by the player. This is not meant to be impleme...
+* [ModelProperty](ModelProperty.md)
 * [PlayerControllerState](PlayerControllerState.md)
   * Movement data the server sends back to the client. 
+* [StandardPlayerController](StandardPlayerController.md)
 
 ## Enums
 
@@ -29,4 +31,5 @@ Full name: Game.Shared
 
 * [Components](Components/index.md)
 * [Packets](Packets/index.md)
+* [Physics](Physics/index.md)
 

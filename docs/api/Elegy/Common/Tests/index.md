@@ -16,4 +16,5 @@ None.
 * [Assets](Assets/index.md)
 * [Geometry](Geometry/index.md)
 * [Maths](Maths/index.md)
+* [Text](Text/index.md)
 

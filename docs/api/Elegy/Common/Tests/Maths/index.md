@@ -7,6 +7,7 @@ Full name: Elegy.Common.Tests.Maths
 
 * [CoordsAngleTests](CoordsAngleTests.md)
 * [CoordsMatrixTests](CoordsMatrixTests.md)
+* [CoordsQuaternionsTests](CoordsQuaternionsTests.md)
 
 ## Enums
 

@@ -14,6 +14,7 @@ None.
 ## Further namespaces
 
 * [Assets](Assets/index.md)
+* [Benchmarks](Benchmarks/index.md)
 * [Extensions](Extensions/index.md)
 * [Geometry](Geometry/index.md)
 * [Interfaces](Interfaces/index.md)
