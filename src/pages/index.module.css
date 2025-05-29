@@ -4,7 +4,7 @@
  */
 
 .heroBanner {
-  padding: 1rem 32rem;
+  padding: 1rem 24%;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -46,6 +46,13 @@
   padding: 0 25%;
 }
 
+@media screen and (max-width: 996px) {
+  .homepageTabs {
+    padding: 0;
+    justify-content: center;
+  }
+}
+
 .buttons {
   display: flex;
   align-items: center;
@@ -53,7 +60,7 @@
 }
 
 .buttonHomepage {
-  margin: 0rem 1rem;
+  margin: 0rem 0.333rem;
   background-color: var(--ifm-herobutton-background-color);
   color: var(--ifm-herobutton-color);
 }
@@ -62,3 +69,4 @@
   background-color: var(--ifm-herobutton-background-hover-color);
   color: var(--ifm-herobutton-hover-color);
 }
+

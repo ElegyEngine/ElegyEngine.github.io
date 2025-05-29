@@ -1,12 +1,25 @@
 
 .features {
-  align-content: center;
-  align-items: center;
-  padding: 1rem 12rem;
-  width: 75%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: stretch;
+  align-self: stretch;
+  padding: 1rem 0rem;
+  width: 90%;
+}
+
+.featureItem { 
+  width: 50%;
+}
+
+@media screen and (max-width: 996px) {
+  .featureItem {
+    width: 100%;
+  }
 }
 
 .featureDescription {
   text-align: justify;
-  padding-bottom: 2rem;
 }

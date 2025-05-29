@@ -92,7 +92,7 @@ const FeatureList: WorkflowItem[] = [
 
 function Feature({title, description}: WorkflowItem) {
   return (
-    <div className="text--center padding-horiz--md">
+    <div className={clsx("text--center padding-horiz--md", styles.featureItem)}>
       <Heading as="h2">{title}</Heading>
       <p className={clsx(styles.featureDescription)}>{description}</p>
     </div>
