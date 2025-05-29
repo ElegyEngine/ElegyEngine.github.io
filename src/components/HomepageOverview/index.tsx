@@ -2,6 +2,7 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import WipNotice from '../WipNotice/WipNotice';
 
 type FeatureItem = {
   title: string;
@@ -74,12 +75,7 @@ function Feature({title, Svg, description}: FeatureItem) {
 export default function HomepageOverview(): JSX.Element {
   return (
     <div className="container">
-      <div className='row'>
-        <p className='col col--12 hero__subtitle text--center'>
-          Note: This engine is a very early work in progress! 🛠 <br/>
-          Check out the <Link to='/blog'>development articles</Link> in the meantime.
-        </p>
-      </div>
+      <WipNotice />
       <div className="row">
         {FeatureList.map((props, idx) => (
           <Feature key={idx} {...props} />

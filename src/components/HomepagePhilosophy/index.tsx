@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './features.module.css';
+import WipNotice from '../WipNotice/WipNotice';
 
 type WorkflowItem = {
   title: string;
@@ -100,10 +101,15 @@ function Feature({title, description}: WorkflowItem) {
 
 export default function HomepagePhilosophy(): JSX.Element {
   return (
-    <section className={clsx("container", styles.features)}>
-      {FeatureList.map((props, idx) => (
-        <Feature key={idx} {...props} />
-      ))}
-    </section>
+    <div className='container'>
+      <div className='col'>
+        <WipNotice />
+        <section className={clsx("row container", styles.features)}>
+          {FeatureList.map((props, idx) => (
+            <Feature key={idx} {...props} />
+            ))}
+        </section>
+      </div>
+    </div>
   );
 }
