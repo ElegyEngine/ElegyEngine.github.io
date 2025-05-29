@@ -57,16 +57,18 @@ function HomepageDescription()
       </div>
       <div className='row'>
         <div className='col col--6'>
-          <p>
+          <p className='padding-horiz--lg'>
             <Heading as='h2' className='text--center'>What Elegy is</Heading>
-            Elegy Engine is an umbrella project that encompasses the following:<br />
+            <p>
+              Elegy Engine is an umbrella project that encompasses the following:
+            </p>
             <ul>
               <li>
                 A game engine specialised for retro FPS games and the like.
                 <ul>
                   <li>Think Quake, Half-Life, Unreal, Thief, System Shock.</li>
                   <li>Written in C#, targeting .NET 8, running on Windows, Linux and Android/VR.</li>
-                  <li>Uses Vulkan 1.3 for rendering.</li>
+                  <li>Uses Vulkan for rendering.</li>
                   <li>MIT-licenced, free for everyone, for any purpose, forever.</li>
                 </ul>
               </li>
@@ -80,10 +82,12 @@ function HomepageDescription()
                 </ul>
               </li>
             </ul>
+            <b>Note:</b> the above text is more of a vision than the current state of things.
+            Progress can be tracked on the <Link to='/docs/roadmap'>roadmap</Link>.
           </p>
         </div>
         <div className='col col--6'>
-          <p>
+          <p className='padding-horiz--lg'>
             <Heading as='h2' className='text--center'>What Elegy isn't</Heading>
             <ul>
               <li>
