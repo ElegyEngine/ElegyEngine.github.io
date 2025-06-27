@@ -8,9 +8,30 @@ on:
     # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
 
 jobs:
+  build-ref:
+    name: Build API reference
+    runs-on: ubuntu_latest
+
+    steps:
+    - uses: actions/checkout@v4
+      name: Checkout code
+
+    - name: Change dir to fx
+      run: cd fx/
+
+    - uses: nunit/docfx-action@v4.1.0
+      name: Build DocFx pages
+      with:
+        args: docfx.json
+
+    - name: Change dir back
+      run: cd ..
+
   build:
     name: Build Docusaurus
+    needs: build-ref
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
         with:
