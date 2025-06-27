@@ -8,34 +8,24 @@ on:
     # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
 
 jobs:
-  build-ref:
-    name: Build API reference
-    runs-on: ubuntu_latest
-
-    steps:
-    - uses: actions/checkout@v4
-      name: Checkout code
-      with:
-        fetch-depth: 0
-
-    - uses: nunit/docfx-action@v4.1.0
-      name: Build DocFx pages
-      with:
-        args: fx/docfx.json
-
   build:
-    name: Build Docusaurus
-    needs: build-ref
+    name: Build website
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
       - uses: actions/setup-node@v4
         with:
           node-version: 18
           cache: npm
+
+      - uses: nunit/docfx-action@v4.1.0
+        name: Build DocFx pages
+        with:
+          args: fx/docfx.json
 
       - name: Install dependencies
         run: npm ci
