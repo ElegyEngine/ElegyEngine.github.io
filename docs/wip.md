@@ -6,12 +6,10 @@ sidebar_position: 1
 
 The documentation is currently under construction.
 
-Right now there is a:
+Right now there is a/an:
 * [Design document](design-doc.md)
 * [Roadmap](roadmap.md)
-
-Work in progress:
-* [API reference](api/index.md)
+* <a href="/ref/index.html" target="_parent">API reference</a>
 
 Future:
 * Tutorials/guides
