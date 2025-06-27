@@ -1,0 +1,42 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "../ElegyEngine/src",
+          "files": [
+            "Core/**/*.csproj",
+            "Modules/**/*.csproj",
+            "Plugins/**/*.csproj",
+            "Tools/**/*.csproj"
+          ]
+        }
+      ],
+      "dest": "./",
+      "categoryLayout": "nested",
+      "memberLayout": "samePage",
+      "namespaceLayout": "nested"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.{md,yml}"
+        ]
+      }
+    ],
+    "output": "../static/ref",
+    "template": [
+      "default",
+      "modern"
+    ],
+    "globalMetadata": {
+      "_appName": "Elegy Engine API Reference",
+      "_appTitle": "Elegy Engine API Reference",
+      "_enableSearch": true,
+      "pdf": false
+    }
+  }
+}
