@@ -15,17 +15,13 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       name: Checkout code
-
-    - name: Change dir to fx
-      run: cd fx/
+      with:
+        fetch-depth: 0
 
     - uses: nunit/docfx-action@v4.1.0
       name: Build DocFx pages
       with:
-        args: docfx.json
-
-    - name: Change dir back
-      run: cd ..
+        args: fx/docfx.json
 
   build:
     name: Build Docusaurus
