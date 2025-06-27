@@ -19,10 +19,7 @@ Prerequisites:
 Build instructions:
 1. Generate the API reference:  
 	```
-	cd fx/
-	docfx metadata --namespaceLayout=Nested --memberLayout=SamePage
-	docfx build
-	cd ..
+	docfx fx/docfx.json
 	```
 	This will produce a ton of YAML files in `fx/`, and then generate HTML into `static/ref/`. The `static` directory is used by Docusaurus for raw content that it will not filter and just copy to the website.
 2. Generate the website:  
